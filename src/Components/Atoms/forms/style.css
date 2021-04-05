@@ -1,0 +1,36 @@
+input {
+  height: 35px;
+  width: 100%;
+  color: black;
+}
+#input-addon {
+  border-top: var(--border);
+  border-bottom: var(--border);
+  border-left: var(--border);
+  border-right: none;
+  border-radius: var(--rounded-min) 0 0 var(--rounded-min);
+}
+#input {
+  border: var(--border);
+  border-radius: var(--rounded-min);
+}
+#label-form {
+  font-style: italic;
+  font-size: 11.9444px;
+  line-height: 14px;
+  color: rgba(154, 154, 154, 0.4);
+}
+#container-input {
+  display: flex;
+}
+.addon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: var(--border);
+  padding: 0 10px;
+  font-size: 11.9444px;
+  line-height: 14px;
+  color: rgba(154, 154, 154, 0.4);
+  border-radius: 0 var(--rounded-min) var(--rounded-min) 0;
+}

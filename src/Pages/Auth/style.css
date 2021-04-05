@@ -1,0 +1,29 @@
+#login-container {
+  display: grid;
+  grid-template-columns: 4fr 7fr;
+}
+.left-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-side {
+  background-color: #ED1260;
+  height: 724px;
+  background-image: url('../../Assets/Images/Asset\ 7@300x\ 1.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width:992px){
+  #login-container {
+    display: block;
+  }
+  .left-side {
+    margin-top: 40px;
+  }
+  .right-side{
+    display: none;
+  }
+}

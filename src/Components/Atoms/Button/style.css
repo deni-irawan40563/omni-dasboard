@@ -1,0 +1,29 @@
+/* Default Button Style */
+.btn-default {
+  height: 42px;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: var(--rounded-mid);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+/* Button Normal Style */
+#btn {
+  width: 166px;
+}
+#btn-block {
+    width: 100%;
+}
+
+/* Button Disabled Style */
+#btn-disabled {
+  width: 166px;
+  background-color: var(--primary-color-disabled);
+}
+#btn-block-disabled {
+  width: 100%;
+  background-color: var(--primary-color-disabled);
+}
