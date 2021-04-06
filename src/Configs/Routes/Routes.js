@@ -16,9 +16,9 @@ export default class Routes extends Component {
     return (
         <Router>
           <Switch>
-            <Route path='/' component={Login} />
-            <Route path='/register' component={Register} />
-            <Route path='/forgotpass' component={Forgotpass} />
+            <Route path='/' component={Login} exact/>
+            <Route path='/register' component={Register} exact/>
+            <Route path='/forgotpass' component={Forgotpass} exact/>
           </Switch>
         </Router>
     )

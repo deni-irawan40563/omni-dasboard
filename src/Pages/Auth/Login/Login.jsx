@@ -11,7 +11,7 @@ export default class Login extends Component {
     return (
       <div className="auth-container">
         <div className="left-side">
-          <AuthLayout authTitle="Welcome Back, Please login into your account" login={true}/>
+          <AuthLayout authTitle="Welcome Back, Please login into your account" login={true} link="/forgotpass"/>
         </div>
         <div className="right-side">
         </div>

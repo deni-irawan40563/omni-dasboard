@@ -7,18 +7,18 @@ import './style.css';
 import AuthForm from '../../Molecules/AuthForm';
 
 //Main-Components:
-export default function AuthLayout({authTitle, register, forgotpass, login}) {
-  // if(login){
-  //   return (
-  //     <AuthForm authTitle={authTitle} login={login}/>
-  //   )
-  // }
-  // else if(register){
-  //   return (
-  //     <AuthForm authTitle={authTitle} register={register}/>
-  //   )
-  // }
-   if(forgotpass){
+export default function AuthLayout({authTitle, register, forgotpass, login, link}) {
+  if(login){
+    return (
+      <AuthForm authTitle={authTitle} login={login} link={link}/>
+    )
+  }
+  if(register){
+    return (
+      <AuthForm authTitle={authTitle} register={register}/>
+    )
+  }
+  if(forgotpass){
     return (
       <AuthForm authTitle={authTitle} forgotpass={forgotpass}/>
     )
@@ -31,7 +31,7 @@ AuthLayout.defaultProps = {
   authTitle : 'This Is AuthLayout on Template Components',
   login: false,
   register: false,
-  forgotpass: true
+  forgotpass: false
 }
 //Props-Type:
 AuthLayout.propTypes = {

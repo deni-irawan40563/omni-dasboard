@@ -16,7 +16,9 @@
   background-position: center;
   height: 100%;
 }
-
+.side {
+  padding: 25%;
+}
 @media (max-width:992px){
   .auth-container {
     display: block;

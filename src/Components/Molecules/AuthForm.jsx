@@ -10,7 +10,7 @@ import Button from '../Atoms/Button/Button';
 import Logo from '../../Assets/Images/Full Logo Full Color.png';
 
 //Main-Components:
-export default function AuthForm({authTitle, register, forgotpass, login}) {
+export default function AuthForm({authTitle, register, forgotpass, login, link}) {
   if(login){
     return (
       <div>
@@ -19,7 +19,7 @@ export default function AuthForm({authTitle, register, forgotpass, login}) {
         </div>
         <h1 id="auth-title">{authTitle}</h1>
         <Form title="Username/Email" name="Username/Email" />
-        <Form addon={true} title="password" type="password" addonTitle="forgot?" name="password" />
+        <Form addon={true} title="password" type="password" addonTitle="forgot?" name="password" link={link}/>
         <div id="button-auth">
           <Button title="Sign In" block={true} />
         </div>
