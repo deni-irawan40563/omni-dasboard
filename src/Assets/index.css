@@ -1,7 +1,7 @@
 /* Import Font Style From Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); /*Lato*/
 
-/* Create Variable Css for Global Use */
+/* Create Variable CSS for Global Use */
 :root {
   --primary-color: #E81255;
   --primary-color-disabled: #ee81a3;
@@ -14,7 +14,7 @@
   --border: 1px solid #BBC1C8;
 }
 
-/* Basic Setting for Global Css*/
+/* Basic Setting for Global CSS*/
 * {
   margin: unset;
   box-sizing: border-box;
@@ -27,7 +27,7 @@ body {
   min-block-size: 100%;
   min-inline-size: 100%;
   color: #4F4F4F;
-  font-family: 'Lato', system-ui, sans-serif;
+  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

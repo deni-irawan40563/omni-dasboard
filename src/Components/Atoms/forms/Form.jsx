@@ -13,7 +13,7 @@ export default function Form({title, type, name, addonTitle, addon, link}) {
         <label id="label-form">{title}</label>
         <div id="container-input">
           <input type={type} name={name} id="input-addon"/>
-          <Link to={link} className="addon">{addonTitle}</Link>        
+          <Link to={link} className="addon">{addonTitle}</Link>
         </div>
       </>
     )
@@ -21,14 +21,14 @@ export default function Form({title, type, name, addonTitle, addon, link}) {
   return (
     <>
       <label id="label-form">{title}</label>
-      <input type={type} name={name} id="input"/>  
+      <input type={type} name={name} id="input"/>
     </>
   )
 }
 
 //Default-Props:
 Form.defaultProps = {
-  title: 'this form',
+  title: 'this form from atoms components',
   type: 'text',
   addonTitle: 'addon?',
   addon: false,

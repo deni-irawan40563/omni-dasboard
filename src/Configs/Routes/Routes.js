@@ -7,6 +7,8 @@ import {
 import { Component } from 'react';
 //Import-Components:
 import Login from '../../Pages/Auth/Login/Login';
+import Register from "../../Pages/Auth/Register/Register";
+import Forgotpass from "../../Pages/Auth/ForgotPass/ForgotPass";
 
 //Main-Components:
 export default class Routes extends Component {
@@ -15,6 +17,8 @@ export default class Routes extends Component {
         <Router>
           <Switch>
             <Route path='/' component={Login} />
+            <Route path='/register' component={Register} />
+            <Route path='/forgotpass' component={Forgotpass} />
           </Switch>
         </Router>
     )

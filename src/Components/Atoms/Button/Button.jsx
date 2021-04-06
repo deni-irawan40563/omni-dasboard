@@ -6,15 +6,15 @@ import PropTypes from 'prop-types';
 import './style.css';
 
 //Main-Component:
-export default function Button({title, icon, block, isLoading}) {
+export default function Button({title, icon, block, isLoading, onClick}) {
   if(isLoading){
       return <button
-      id={block ? 'btn-block-disabled' : 'btn-disabled'} className="btn-default" disabled>
+      id={block ? 'btn-block-disabled' : 'btn-disabled'} className="btn-default" onClick={onClick} disabled>
       <i className={icon} /> {title}
       </button>
   }
   return <button
-            id={block ? 'btn-block' : 'btn'} className="btn-default" >
+            id={block ? 'btn-block' : 'btn'} className="btn-default" onClick={onClick} >
             <i className={icon} /> {title}
         </button>
 }

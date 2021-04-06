@@ -1,11 +1,42 @@
+//Import-React:
 import React from 'react';
+import PropTypes from 'prop-types';
+//Import-Style:
 import './style.css';
+//Import-Components:
 import AuthForm from '../../Molecules/AuthForm';
 
-export default function AuthLayout() {
-  return (
-    <div id="auth-container">
-      <AuthForm />
-    </div>
-  )
+//Main-Components:
+export default function AuthLayout({authTitle, register, forgotpass, login}) {
+  // if(login){
+  //   return (
+  //     <AuthForm authTitle={authTitle} login={login}/>
+  //   )
+  // }
+  // else if(register){
+  //   return (
+  //     <AuthForm authTitle={authTitle} register={register}/>
+  //   )
+  // }
+   if(forgotpass){
+    return (
+      <AuthForm authTitle={authTitle} forgotpass={forgotpass}/>
+    )
+  }
+  return <h1>Please Input</h1>
+}
+
+//Default-Props:
+AuthLayout.defaultProps = {
+  authTitle : 'This Is AuthLayout on Template Components',
+  login: false,
+  register: false,
+  forgotpass: true
+}
+//Props-Type:
+AuthLayout.propTypes = {
+  authTitle: PropTypes.string,
+  login: PropTypes.bool,
+  register: PropTypes.bool,
+  forgotpass: PropTypes.bool
 }

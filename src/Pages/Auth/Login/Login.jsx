@@ -1,13 +1,17 @@
+//Import-React:
 import React, { Component } from 'react';
-import AuthLayout from '../../../Components/Templates/AuthLayout/AuthLayout';
+//Import-Style:
 import '../style.css';
+//Import-Components:
+import AuthLayout from '../../../Components/Templates/AuthLayout/AuthLayout';
 
+//Main-Components:
 export default class Login extends Component {
   render() {
     return (
-      <div id="login-container">
+      <div className="auth-container">
         <div className="left-side">
-          <AuthLayout />
+          <AuthLayout authTitle="Welcome Back, Please login into your account" login={true}/>
         </div>
         <div className="right-side">
         </div>
