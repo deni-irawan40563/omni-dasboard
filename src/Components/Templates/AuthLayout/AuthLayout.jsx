@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 //Import-Style:
 import './style.css';
 //Import-Components:
-import AuthForm from '../../Molecules/AuthForm';
+import AuthForm from '../../Molecules/AuthForm/AuthForm';
 
 //Main-Components:
 export default function AuthLayout({authTitle, register, forgotpass, login, link}) {

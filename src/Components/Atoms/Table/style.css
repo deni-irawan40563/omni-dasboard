@@ -1,0 +1,71 @@
+#table-style {
+  overflow: auto;
+  height: 232.24px;
+}
+#table {
+  width: 100%;
+  border: var(--border);
+  text-align: center;
+  margin-top: 10px;
+  border-radius: var(--rounded-mid);
+}
+#table-name {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 10px;
+  color: var(--primary-color);
+}
+#table-contents {
+  max-height: 200px;
+  overflow: auto;
+  width: 100%;
+}
+#table-title th {
+  padding: 10px 0;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #979797;
+}
+#table tr th p {
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #4B506D;
+  text-align: right;
+  display: inline-block;
+  margin: 10px;
+}
+#table-name-container th {
+  border-bottom: var(--border);
+}
+.table-contents td {
+  padding: 15px 0;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #3D3D3D;
+}
+
+.table-contents td .success {
+  color: var(--green-color);
+}
+.table-contents td .failed {
+  color: var(--primary-color)
+}
+.table-contents td .progress {
+  color: var(--blue-color);
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(196, 196, 196, 0.44);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color); 
+  border-radius: 10px;
+}

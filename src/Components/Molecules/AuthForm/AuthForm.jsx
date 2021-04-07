@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 //Import-Style:
 import './style.css';
 //Import-Components:
-import Form from '../Atoms/forms/Form';
-import Button from '../Atoms/Button/Button';
+import Form from '../../Atoms/forms/Form';
+import Button from '../../Atoms/Button/Button';
 //Import-Assets:
-import Logo from '../../Assets/Images/Full Logo Full Color.png';
+import Logo from '../../../Assets/Images/Full Logo Full Color.png';
 
 //Main-Components:
 export default function AuthForm({authTitle, register, forgotpass, login, link}) {
@@ -64,7 +64,8 @@ AuthForm.defaultProps = {
   authTitle: 'This Is AuthForm on Molecules Components',
   login: false,
   register: false,
-  forgotpass: false
+  forgotpass: false,
+  link: '/'
 }
 //Props-Type:
 Form.propTypes = {
@@ -72,4 +73,5 @@ Form.propTypes = {
   login: PropTypes.bool,
   register: PropTypes.bool,
   forgotpass: PropTypes.bool,
+  link: PropTypes.string,
 };

@@ -1,0 +1,11 @@
+#aside-bar {
+  height: 100vh;
+  background-color: var(--primary-color);
+  text-align: center;
+}
+#logo {
+  margin-top: 50px;
+}
+#sidebar-link {
+  padding: 10%;
+}

@@ -9,7 +9,7 @@
   justify-content: center;
 }
 .right-side {
-  background-color: #ED1260;
+  background-color: var(--primary-color);
   background-image: url('../../Assets/Images/Asset\ 7@300x\ 1.svg');
   background-size: cover;
   background-repeat: no-repeat;

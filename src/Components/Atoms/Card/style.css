@@ -1,0 +1,20 @@
+#card {
+  border: var(--border);
+  border-top: 7px solid var(--primary-color);
+  padding: 25px;
+  border-radius: var(--rounded-mid);
+}
+#card h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.002em;
+}
+#card h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.002em;
+}

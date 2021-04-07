@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  border: var(--border);
+  width: 405px;
+  border-radius: var(--rounded-min);
+}
+#search-icon {
+  padding: 10px;
+}
+input {
+  border: none;
+}

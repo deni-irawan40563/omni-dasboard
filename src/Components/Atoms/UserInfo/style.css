@@ -1,0 +1,26 @@
+#user-info {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  width: 200px;
+  gap: 10px;
+  padding: 10px;
+  text-align: right;
+}
+#user-data h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+}
+#user-data p {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+}
+#user-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: gainsboro;
+}
