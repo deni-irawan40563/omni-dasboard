@@ -1,13 +1,13 @@
 #table-style {
   overflow: auto;
   height: 232.24px;
+  border: var(--border);
+  margin-top: 10px;
+  border-radius: var(--rounded-mid);
 }
 #table {
   width: 100%;
-  border: var(--border);
   text-align: center;
-  margin-top: 10px;
-  border-radius: var(--rounded-mid);
 }
 #table-name {
   font-weight: bold;
@@ -68,4 +68,13 @@
 ::-webkit-scrollbar-thumb {
   background: var(--primary-color); 
   border-radius: 10px;
+}
+#success {
+  color: var(--green-color);
+}
+#failed {
+  color: var(--primary-color);
+}
+#progress {
+  color: var(--blue-color);
 }

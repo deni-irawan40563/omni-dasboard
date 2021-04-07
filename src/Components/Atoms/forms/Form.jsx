@@ -6,7 +6,18 @@ import { Link } from 'react-router-dom';
 import './style.css';
 
 //Main-Components:
-export default function Form({title, type, name, addonTitle, addon, link}) {
+export default function Form({title, type, name, addonTitle, addon, link, addonLink}) {
+  if(addonLink){
+    return (
+      <>
+        <label id="label-form">{title}</label>
+        <div id="container-input">
+          <input type={type} name={name} id="input-addon"/>
+          <Link to={link} className="addon">{addonTitle}</Link>
+        </div>
+      </>
+    )
+  }
   if(addon){
     return (
       <>

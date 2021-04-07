@@ -1,0 +1,8 @@
+
+#select-form-group {
+  display: grid;
+  grid-template-columns: 2fr 11fr;
+}
+#select-form-two {
+  display: flex;
+}

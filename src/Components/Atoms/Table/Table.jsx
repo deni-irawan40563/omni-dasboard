@@ -1,9 +1,12 @@
+//Import-React:
 import React from 'react';
+import PropType from 'prop-types';
+//Import-Style:
 import './style.css';
 
+//Main-Components:
 export default function Table({color}) {
   return (
-    <div id="table-style">
     <div id="table-style">
       <table id="table">
         <tr id="table-name-container">
@@ -27,7 +30,7 @@ export default function Table({color}) {
               <td>call</td>
               <td>Reminding Billing 20 September</td>
               <td>12223</td>
-              <td className="success">success</td>
+              <td id="success">success</td>
               <td>July 15, 2018 4:47 AM</td>
             </tr>
             <tr className="table-contents">
@@ -35,11 +38,43 @@ export default function Table({color}) {
               <td>call</td>
               <td>Reminding Billing 20 September</td>
               <td>12223</td>
-              <td className="failed">failed</td>
+              <td id="failed">failed</td>
               <td>July 15, 2018 4:47 AM</td>
-            </tr>   
+            </tr> 
+            <tr className="table-contents">
+              <td>MTN_NAMSM</td>
+              <td>call</td>
+              <td>Reminding Billing 20 September</td>
+              <td>12223</td>
+              <td id="progress">progress</td>
+              <td>July 15, 2018 4:47 AM</td>
+            </tr> 
+            <tr className="table-contents">
+              <td>MTN_NAMSM</td>
+              <td>call</td>
+              <td>Reminding Billing 20 September</td>
+              <td>12223</td>
+              <td id="success">success</td>
+              <td>July 15, 2018 4:47 AM</td>
+            </tr>
+            <tr className="table-contents">
+              <td>MTN_NAMSM</td>
+              <td>call</td>
+              <td>Reminding Billing 20 September</td>
+              <td>12223</td>
+              <td id="failed">failed</td>
+              <td>July 15, 2018 4:47 AM</td>
+            </tr>  
       </table>
     </div>
-    </div>
   )
+}
+
+//Default-Props:
+Table.defaultProps = {
+  color: ''
+}
+//Props-Type:
+Table.PropType = {
+  color: PropType.string
 }

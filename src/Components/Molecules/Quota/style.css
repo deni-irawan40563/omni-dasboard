@@ -10,3 +10,10 @@
   line-height: 22px;
   color: rgba(0, 0, 0, 0.6);
 }
+@media (max-width:994px){
+  #quota {
+    grid-template-columns: 1fr 1fr;
+    gap: none;
+    margin: 20px 0;
+  }
+}

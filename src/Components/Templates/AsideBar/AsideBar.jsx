@@ -7,20 +7,6 @@ import Logo from '../../../Assets/Images/Full Logo Full White.png';
 import DropDown from '../../Atoms/DropDown/DropDown';
 
 //Main-Components:
-// export default function AsideBar() {
-//   return (
-//     <aside id="aside-bar">
-//       <img src={Logo} alt="logo" id="logo"/>
-//       <div id="sidebar-link">
-//         <DropDown title="Home" icon="fas fa-home"/>
-//         <DropDown title="SMS" icon="far fa-comment-alt" iconRight="fas fa-chevron-down" dropdownTitle="SMS Scheduler" dropdownTitle1="Broadcast"/>
-//       </div>
-//     </aside>
-//   )
-// }
-
-// import React, { Component } from 'react'
-
 export default class AsideBar extends Component {
   state = {
     collapse: true

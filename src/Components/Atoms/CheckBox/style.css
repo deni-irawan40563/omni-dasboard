@@ -1,0 +1,7 @@
+#container-check-box input {
+  width: 49px;
+  height: 18px;
+}
+.checkmark {
+  background-color: var(--primary-color);
+}

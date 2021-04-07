@@ -1,8 +1,13 @@
+//Import-React:
 import React from 'react';
+import PropType from 'prop-types';
+//Import-Style:
+import './style.css';
+//Import-Components
 import SearchBar from '../../Atoms/SearchBar/SearchBar';
 import UserInfo from '../../Atoms/UserInfo/UserInfo';
-import './style.css';
 
+//Main-Components
 export default function Navbar({username, userEmail}) {
   return (
     <nav id="navbar">
@@ -16,3 +21,13 @@ export default function Navbar({username, userEmail}) {
   )
 }
 
+//Default-Props:
+Navbar.defaultProps = {
+  username: 'username',
+  userEmail: 'user@gmail.com'
+}
+//Props-Type:
+Navbar.PropType = {
+  username: PropType.string,
+  userEmail: PropType.string
+}
