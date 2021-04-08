@@ -7,20 +7,20 @@ import './style.css';
 import AuthForm from '../../Molecules/AuthForm/AuthForm';
 
 //Main-Components:
-export default function AuthLayout({authTitle, register, forgotpass, login, link}) {
+export default function AuthLayout({authTitle, register, forgotpass, login, link, onClick}) {
   if(login){
     return (
-      <AuthForm authTitle={authTitle} login={login} link={link}/>
+      <AuthForm authTitle={authTitle} login={login} link={link} onClick={onClick}/>
     )
   }
   if(register){
     return (
-      <AuthForm authTitle={authTitle} register={register}/>
+      <AuthForm authTitle={authTitle} register={register} onClick={onClick}/>
     )
   }
   if(forgotpass){
     return (
-      <AuthForm authTitle={authTitle} forgotpass={forgotpass}/>
+      <AuthForm authTitle={authTitle} forgotpass={forgotpass} onClick={onClick}/>
     )
   }
   return <h1>Please Input</h1>

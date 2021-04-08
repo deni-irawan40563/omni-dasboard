@@ -23,7 +23,8 @@ export default function Button({title, icon, block, isLoading, onClick}) {
 Button.defaultProps = {
   title: 'Button',
   isLoading: false,
-  block: false
+  block: false,
+  onClick: null
 }
 
 //Props-Type:
@@ -31,5 +32,6 @@ Button.propTypes = {
   title: PropTypes.string,
   icon: PropTypes.string,
   block: PropTypes.bool,
-  isLoading: PropTypes.bool
+  isLoading: PropTypes.bool,
+  onClick: PropTypes.func
 };

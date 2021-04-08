@@ -1,7 +1,13 @@
 #radio-check-button {
   margin-top: 15px;
 }
+#radio-check-button span {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.002em;
+}
 #radio-check-button input {
-  width: 48px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
+  margin: 0 10px;
 }

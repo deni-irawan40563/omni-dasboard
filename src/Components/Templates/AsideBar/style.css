@@ -9,3 +9,17 @@
 #sidebar-link {
   padding: 10%;
 }
+#closeButton {
+  display: none;
+}
+@media (max-width: 994px){
+  #aside-bar {
+    width: 90%;
+    position: absolute;
+  }
+  #closeButton {
+    color: blueviolet;
+    background-color: #000;
+    z-index: 100;
+  }
+}

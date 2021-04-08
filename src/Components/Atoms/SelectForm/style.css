@@ -3,4 +3,16 @@
 }
 #custom-select span {
   margin: 0 3px;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.002em;
+  color: #3D3D3D;
+}
+@media (max-width:590px){
+  #custom-select span {
+    display: none;
+  }
+  #custom-select {
+    margin-right: 3px;
+  }
 }

@@ -25,8 +25,8 @@ export default function SelectForm({leftText, rightText, title}) {
 //Default-Props:
 SelectForm.defaultProps = {
   title: 'title',
-  leftText: 'left text',
-  rightText: 'right text'
+  leftText: '',
+  rightText: ''
 }
 //Props-Type:
 SelectForm.PropsType = {

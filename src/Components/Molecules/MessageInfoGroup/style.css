@@ -4,3 +4,11 @@
 #input-message-group {
   width: 275px;
 }
+#text-area p {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.002em;
+  color: #4F5154;
+  margin-bottom: 10px;
+}

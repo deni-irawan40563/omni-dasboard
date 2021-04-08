@@ -12,15 +12,17 @@ import SelectFormGroup from '../../Molecules/SelectFormGroup/SelectFormGroup';
 export default function SmsSchdullerItems() {
   return (
     <div id="sms-schedule">
-      <div id="input-message-info"> 
+      <div> 
         <MessageInfoGroup />      
       </div>
       <hr />
-      <h1>Schedule</h1>
-      <small id="desc-schedule">When and how often do you want to broadcast this messages?</small>
+      <div id="schedule-title">
+        <h1>Schedule</h1>
+        <small>When and how often do you want to broadcast this messages?</small>
+      </div>
       <div id="schedule-info">
         <p>Run On</p>
-        <div id="schedule-setting">
+        <div>
           <CheckBoxGroup />
           <SelectFormGroup />
         </div>

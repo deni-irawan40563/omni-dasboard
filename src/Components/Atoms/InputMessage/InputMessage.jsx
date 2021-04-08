@@ -8,7 +8,7 @@ import './style.css';
 export default function InputMessage({title, placeholder}) {
   return (
     <>
-      <label>{title}</label>
+      <label id="broadcast-title">{title}</label>
       <input type="text" placeholder={placeholder} id="broadcast-name"/>
     </>
   )

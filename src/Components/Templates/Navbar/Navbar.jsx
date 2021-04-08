@@ -3,6 +3,8 @@ import React from 'react';
 import PropType from 'prop-types';
 //Import-Style:
 import './style.css';
+//Import-Asset:
+import Logo from '../../../Assets/Images/Full Logo Full White.png';
 //Import-Components
 import SearchBar from '../../Atoms/SearchBar/SearchBar';
 import UserInfo from '../../Atoms/UserInfo/UserInfo';
@@ -10,6 +12,7 @@ import UserInfo from '../../Atoms/UserInfo/UserInfo';
 //Main-Components
 export default function Navbar({username, userEmail}) {
   return (
+    <>
     <nav id="navbar">
       <div id="search-nav">
         <SearchBar />
@@ -18,6 +21,7 @@ export default function Navbar({username, userEmail}) {
         <UserInfo username={username} userEmail={userEmail}/>
       </div>
     </nav>
+    </>
   )
 }
 

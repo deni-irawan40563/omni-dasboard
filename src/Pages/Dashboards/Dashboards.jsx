@@ -6,12 +6,16 @@ import './style.css';
 import AsideBar from '../../Components/Templates/AsideBar/AsideBar';
 import HomeItems from '../../Components/Templates/HomeItems/HomeItems';
 import Navbar from '../../Components/Templates/Navbar/Navbar';
+import MobileNav from '../../Components/Templates/Navbar/MobileNav';
 
 //Main-Components:
 export default class Dashboards extends Component {
   render() {
     return (
       <div id="dashboard">
+        <div id="mobile-Nav">
+          <MobileNav />
+        </div>
         <div id="aside-home">
           <AsideBar />
         </div>

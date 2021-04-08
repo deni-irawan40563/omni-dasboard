@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import './style.css';
 
 //Main-Components:
-export default function DropDown({onClick, collapse, title, icon, dropdownTitle, dropdownTitle1, iconRight, link1, link2}) {
+export default function DropDown({onClick, collapse, title, icon, dropdownTitle, dropdownTitle1, iconRight, clickLink1, clickLink2}) {
   if(collapse){
     return (
       <div id="dropdown">
@@ -15,8 +15,8 @@ export default function DropDown({onClick, collapse, title, icon, dropdownTitle,
       </p>
       <i id="dropdown-icon-right" className={iconRight} />
       <div id="dropdown-items">
-          <p to={link1}><span className="list-icon" />{dropdownTitle}</p>
-          <p to={link2}><span className="list-icon" />{dropdownTitle1}</p>
+          <p><span className="list-icon" onClick={clickLink1}/>{dropdownTitle}</p>
+          <p><span className="list-icon" onClick={clickLink2}/>{dropdownTitle1}</p>
       </div>
     </div>
     )

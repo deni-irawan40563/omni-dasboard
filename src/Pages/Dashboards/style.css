@@ -6,7 +6,9 @@
   max-width: 95%;
   margin: 0 auto;
 }
-
+#mobile-Nav {
+  display: none;
+}
 @media (max-width:994px){
   #dashboard {
     display: block;
@@ -20,5 +22,9 @@
   #main {
     width: 100%;
     margin-top: 20px;
+  }
+  #mobile-Nav {
+    display: block;
+    margin-bottom: 30px;
   }
 }

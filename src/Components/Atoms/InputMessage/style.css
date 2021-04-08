@@ -1,0 +1,12 @@
+#broadcast-name {
+  border: var(--border);
+  margin: 10px 0;
+  border-radius: var(--rounded-min);
+}
+#broadcast-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.002em;
+  color: #4F5154;
+}

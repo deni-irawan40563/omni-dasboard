@@ -10,7 +10,7 @@ import Button from '../../Atoms/Button/Button';
 import Logo from '../../../Assets/Images/Full Logo Full Color.png';
 
 //Main-Components:
-export default function AuthForm({authTitle, register, forgotpass, login, link}) {
+export default function AuthForm({authTitle, register, forgotpass, login, link, onClick}) {
   if(login){
     return (
       <div>
@@ -21,7 +21,7 @@ export default function AuthForm({authTitle, register, forgotpass, login, link})
         <Form title="Username/Email" name="Username/Email" />
         <Form addon={true} title="password" type="password" addonTitle="forgot?" name="password" link={link}/>
         <div id="button-auth">
-          <Button title="Sign In" block={true} />
+          <Button title="Sign In" block={true} onClick={onClick}/>
         </div>
       </div>
     )
@@ -37,7 +37,7 @@ export default function AuthForm({authTitle, register, forgotpass, login, link})
         <Form title="Password" name="password" />
         <Form title="Password Confirmation" name="password" type="password" />
         <div id="button-auth">
-          <Button title="Create Account" block={true} />
+          <Button title="Create Account" block={true} onClick={onClick}/>
         </div>
       </div>
     )
@@ -51,7 +51,7 @@ export default function AuthForm({authTitle, register, forgotpass, login, link})
         <h1 id="auth-title">{authTitle}</h1>
         <Form title="Input Your Email" name="email" type="email" />
         <div id="button-auth">
-          <Button title="Send Email" block={true} />
+          <Button title="Send Email" block={true} onClick={onClick}/>
         </div>
       </div>
     )
@@ -65,7 +65,8 @@ AuthForm.defaultProps = {
   login: false,
   register: false,
   forgotpass: false,
-  link: '/'
+  link: '/',
+  onClick: null
 }
 //Props-Type:
 Form.propTypes = {
@@ -74,4 +75,5 @@ Form.propTypes = {
   register: PropTypes.bool,
   forgotpass: PropTypes.bool,
   link: PropTypes.string,
+  onClick: PropTypes.func
 };

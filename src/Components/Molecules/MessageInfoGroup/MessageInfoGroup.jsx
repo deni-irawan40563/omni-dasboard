@@ -15,6 +15,7 @@ export default function MessageInfoGroup() {
         <InputMessage title="Phonebook" placeholder="Select your phonebook" />
       </div>
       <div id="text-area">
+        <p>message</p>
         <TextAreaForm />
       </div>
     </div>

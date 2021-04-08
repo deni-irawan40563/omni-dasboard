@@ -10,7 +10,7 @@ import SelectForm from '../../Atoms/SelectForm/SelectForm';
 export default function SelectFormGroup() {
   return (
     <div id="select-form-group">
-      <RadioCheckButton title="Once Day  " />
+      <RadioCheckButton title="Once Day" />
       <div>
         <SelectForm leftText="At" rightText="WIB" title="2AM" />
       </div>
@@ -18,7 +18,7 @@ export default function SelectFormGroup() {
       <div id="select-form-two">
         <SelectForm leftText="Every" title="6" />
         <SelectForm rightText="From" title="hours" />
-        <SelectForm rightText="From" title="2AM" />
+        <SelectForm rightText="WIB" title="2AM" />
       </div>
     </div>
   )

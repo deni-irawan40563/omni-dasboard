@@ -7,7 +7,8 @@ import './style.css';
 //Main-Components:
 export default function RadioCheckButton({title}) {
   return (
-    <label id="radio-check-button"> {title}
+    <label id="radio-check-button">
+      <span>{title}</span>
       <input type="radio" checked="checked" name="radio" />
       <span class="checkmark"></span>
     </label>
