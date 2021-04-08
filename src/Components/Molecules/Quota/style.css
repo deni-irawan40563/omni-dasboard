@@ -14,6 +14,13 @@
   #quota {
     grid-template-columns: 1fr 1fr;
     gap: none;
-    margin: 20px 0;
+    margin: unset;
+  }
+}
+@media (max-width:590px){
+  #quota {
+    grid-template-columns: 1fr;
+    gap: none;
+    margin: unset;
   }
 }

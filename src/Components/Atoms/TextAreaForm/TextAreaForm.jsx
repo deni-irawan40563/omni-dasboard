@@ -7,7 +7,7 @@ import './style.css';
 export default function TextAreaForm() {
   return (
     <div id="text-area-form">
-      <textarea type="text" placeholder="Select your phonebook" id="broadcast-message"/>
+      <textarea type="text" placeholder="Select your phonebook" id="broadcast-message" maxLength="1024"/>
       <div id="text-area-count">
         <small>Character 0/1024</small>
       </div>

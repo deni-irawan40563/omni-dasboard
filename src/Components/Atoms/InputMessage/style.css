@@ -2,6 +2,7 @@
   border: var(--border);
   margin: 10px 0;
   border-radius: var(--rounded-min);
+  padding: 10px;
 }
 #broadcast-title {
   font-weight: bold;
@@ -9,4 +10,27 @@
   line-height: 18px;
   letter-spacing: 0.002em;
   color: #4F5154;
+}
+::placeholder {
+font-style: italic;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 0.002em;
+color: #DEDEDE;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+font-style: italic;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 0.002em;
+color: #DEDEDE;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+font-style: italic;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 0.002em;
+color: #DEDEDE;
 }

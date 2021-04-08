@@ -5,11 +5,11 @@ import PropsType from 'prop-types';
 import './style.css';
 
 //Main-Components:
-export default function SelectForm({leftText, rightText, title}) {
+export default function SelectForm({leftText, rightText, title, disabled}) {
   return (
     <div id="custom-select">
       <span>{leftText}</span>
-        <select>
+        <select  disabled={disabled}>
           <option value={title}>{title}</option>
           <option value="#">Data</option>
           <option value="#">Data</option>
@@ -26,11 +26,13 @@ export default function SelectForm({leftText, rightText, title}) {
 SelectForm.defaultProps = {
   title: 'title',
   leftText: '',
-  rightText: ''
+  rightText: '',
+  disabled: ''
 }
 //Props-Type:
 SelectForm.PropsType = {
   title: PropsType.string,
   leftText: PropsType.string,
-  rightText: PropsType.string
+  rightText: PropsType.string,
+  disabled: PropsType.string
 }

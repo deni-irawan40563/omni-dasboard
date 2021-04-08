@@ -36,3 +36,9 @@
 .violet {
   color: var(--violet-color);
 }
+
+@media (max-width:994px){
+  #quota-card {
+    margin-top: 5px;
+  }
+}

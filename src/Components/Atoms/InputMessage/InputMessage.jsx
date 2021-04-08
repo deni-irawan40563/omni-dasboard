@@ -5,7 +5,15 @@ import PropsType from 'prop-types';
 import './style.css';
 
 //Main-Components:
-export default function InputMessage({title, placeholder}) {
+export default function InputMessage({title, placeholder, addon}) {
+  if(addon){
+    return (
+      <>
+        <label id="broadcast-title">{title}</label>
+        <input type="text" placeholder={placeholder} id="broadcast-name"/>
+      </>
+    )
+  }
   return (
     <>
       <label id="broadcast-title">{title}</label>

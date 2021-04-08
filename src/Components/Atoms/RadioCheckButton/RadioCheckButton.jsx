@@ -5,11 +5,11 @@ import PropType from 'prop-types';
 import './style.css';
 
 //Main-Components:
-export default function RadioCheckButton({title}) {
+export default function RadioCheckButton({title, checked}) {
   return (
     <label id="radio-check-button">
       <span>{title}</span>
-      <input type="radio" checked="checked" name="radio" />
+      <input type="radio" checked={checked} name="radio" />
       <span class="checkmark"></span>
     </label>
   )
@@ -17,9 +17,11 @@ export default function RadioCheckButton({title}) {
 
 //Default-Props:
 RadioCheckButton.defaultProps = {
-  title: 'radio'
+  title: 'radio',
+  checked: ''
 }
 //Props-Type:
 RadioCheckButton.PropType = {
-  title: PropType.string
+  title: PropType.string,
+  checked: PropType.string
 }

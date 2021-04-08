@@ -40,3 +40,12 @@
   width: 25px;
   margin: 5px 0;
 }
+@media (max-width:994px){
+  #navbar {
+    padding: 10px;
+    border: var(--border);
+    margin-bottom: 20px;
+    border-radius: var(--rounded-mid);
+    border-top: 5px solid var(--primary-color);
+  }
+}

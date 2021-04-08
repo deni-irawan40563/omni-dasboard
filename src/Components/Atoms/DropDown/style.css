@@ -10,7 +10,14 @@
   display: grid;
   grid-template-columns: 5fr 1fr;
 }
-#dropdown p:hover {
+#dropdown a{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+#dropdown a:hover {
   border-bottom: 2px solid white;
   padding-bottom: 10px;
 }
@@ -23,8 +30,10 @@
 #dropdown-items {
   padding-left: 20%;
 }
-#dropdown-items p {
+#dropdown-items a {
   padding-top: 20px;
+  color: white;
+  display: block;
 }
 .list-icon {
   border-left: 1px solid white;

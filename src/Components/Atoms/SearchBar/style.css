@@ -11,3 +11,8 @@
 input {
   border: none;
 }
+@media (max-width:994px){
+  .container {
+    width: 100%;
+  }
+}

@@ -3,8 +3,6 @@ import React from 'react';
 import PropType from 'prop-types';
 //Import-Style:
 import './style.css';
-//Import-Asset:
-import Logo from '../../../Assets/Images/Full Logo Full White.png';
 //Import-Components
 import SearchBar from '../../Atoms/SearchBar/SearchBar';
 import UserInfo from '../../Atoms/UserInfo/UserInfo';
